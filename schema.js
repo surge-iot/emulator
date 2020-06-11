@@ -1,10 +1,10 @@
 const generators = require('./generators')
 const schema = [
     {
-        topic: 'SENSOR/THI/TEMPERATURE/temp_k_seil',
+        topic: 'SENSOR/THI/TEMPERATURE/temp_room_1',
         data: function () {
             return {
-                sensor_id: 'temp_k_seil',
+                sensor_id: 'temp_room_1',
                 TS: + new Date(),
                 temperature: +generators.gaussianRand(25, 2).toFixed(2),
             }
@@ -12,10 +12,10 @@ const schema = [
         interval: 10000
     },
     {
-        topic: 'SENSOR/POWER/power_k_seil_a',
+        topic: 'SENSOR/POWER/power_room_1',
         data: function () {
             return {
-                sensor_id: 'power_k_seil_a',
+                sensor_id: 'power_room_1',
                 TS: + new Date(),
                 W: generators.gaussianRand(1000, 50),
                 V: generators.gaussianRand(240, 5),
