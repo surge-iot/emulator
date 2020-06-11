@@ -1,0 +1,17 @@
+{
+  "name": "sensor-emulator",
+  "version": "1.0.0",
+  "description": "Emulates a dummy sensor publishing data to an MQTT topic based on a given schema",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shinjan Mitra",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "faker": "^4.1.0",
+    "mqtt": "^4.1.0"
+  }
+}
