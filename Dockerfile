@@ -1,4 +1,4 @@
-FROM node:lts
+FROM node:lts-alpine
 LABEL version="1.0.0"
 LABEL maintainer="shinjan@cse.iitb.ac.in"
 
