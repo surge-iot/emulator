@@ -7,7 +7,7 @@ mqttClient.on('connect', function () {
     console.log('Connected to broker');
     for (let point of schema){
         setInterval(function(){
-            mqttClient.publish(point.topic, JSON.stringify(point.data()))
+            mqttClient.publish(point.topic, point.data())
             if(process.env.NODE_ENV!=='production'){
                 console.log(point.data());
             }
